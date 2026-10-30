@@ -1,0 +1,384 @@
+  body{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8d3b4;
+    color: #333;
+    
+    padding: 0;
+    max-width: fit-content;
+  }
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+nav li a {
+  text-decoration: none;
+  color: black;
+}
+
+.order-button {
+  background-color: chocolate;
+  cursor: pointer;
+  color: white;
+  align-items: center;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}  
+  input {
+margin-top: 30px;
+  } 
+
+  p {
+    text-align: center;
+    margin-top: 200px;
+    margin-left: 100px;
+    font-size: 40px;
+
+    font-weight: bolder,italic;
+    font-family: 'Times New Roman', Times, serif ;
+    
+  }
+
+  
+  section ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    list-style: none;
+    flex-wrap: wrap;
+    flex-direction: row;
+padding-bottom: 20px;
+    
+    
+    
+  }
+  
+.image:hover {
+  transform: scale(1.1,1);
+  background-color: bisque;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  transform: translate(10px);
+}
+.coffee{
+  text-align: center;
+  text-wrap: wrap;
+  
+  
+  margin-bottom: 20px;
+}
+.tea {
+  text-align: center;
+  
+  margin-top: 5px;
+}
+.desc {
+  padding-bottom: 15px;
+}
+.contact {
+  text-align: center;
+  margin-top: 20px;
+  color: black;
+}
+.contact a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.offers {
+  text-align: center;
+}
+
+
+.pastries ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  list-style: none;
+  
+  
+}
+.pastries li {
+  flex-direction: row;
+}
+.pastries {
+  text-align: center;
+}
+
+
+
+.about {
+  color: black;
+  text-align: center;
+  text-wrap: wrap;
+  gap: 5px;
+  
+}
+h2 {
+  text-align: center;
+
+  font-size: 30px;
+  
+}
+.description {
+  font-size: 18px;
+  line-height: none;
+  margin-top: 4px;
+
+
+}
+.desc a {
+  font-size: 16px;
+  color: #666;
+  text-decoration: none;
+}
+ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.li a {
+  text-decoration: none;
+}
+address {
+  text-align: center;
+  font-style: normal;
+  color: black;
+}
+.location {
+
+  color: black;
+  margin-top: 20px;
+}
+
+.image-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  
+  
+}
+
+.image-container img {
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+}
+
+#gallery {
+  padding: 20px;
+  line-height: 1.5;
+}
+.menu-item {
+  text-align: center;
+  margin-bottom: 20px;
+}
+   .menu-item img {
+    width: 300px;
+    height: 300px;
+   }
+#view-button {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  background-color: chocolate;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+  .view-button:hover {
+    background-color: darkorange;
+    transform: translateY(-2px);
+  transition: 0.3s;
+  transform: translateY(0);
+
+}
+.menu-icon {
+width: 20px;
+height: 20px;
+margin-left: 5px;
+background-color: none;
+}
+#visit-us {
+  clear: both;
+  line-height: 1.6;
+  margin-top: 20px;
+  float: right;
+
+}
+.visit-text {
+ 
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+.cafe-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+  text-wrap: wrap;
+
+}
+.float {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+}
+.text {
+  font-size: 16px;
+  text-wrap: wrap;
+  text-align: left;
+}
+.info {
+  padding-right: 20px;
+}
+
+.info h2 {
+  font-size: 2.5rem;
+  color: #5c3a21; /* Deep brown heading color */
+  margin-bottom: 15px;
+}
+
+.info p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+.btn {
+
+  background-color: #6f4e37; /* Coffee brown accent color */
+  color: white;
+  border: none;
+  padding: 20px 24px;
+  border-radius: 20px; /* Creates smooth capsule pill shape */
+  cursor: pointer;
+  font-weight: bold;
+}
+.footer-container {
+  display: flex;
+justify-content: space-between;
+  background-color: #5c3a21; /* Deep brown footer background */
+  color: white;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.submit {
+  background-color: #6f4e37; /* Coffee brown accent color */
+  color: white;
+  border: none;
+  padding: 20px 24px;
+  border-radius: 20px; /* Creates smooth capsule pill shape */
+  cursor: pointer;
+  font-weight: bold;
+}
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.subscribe-form {
+  display: flex;
+  align-items: center;
+}
+.email-input {
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  padding: 30px;
+
+}
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.social a:hover {
+  text-decoration: underline;
+}
+.footer-text {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+.overlay{
+  position: absolute;
+  
+  /* Center the text perfectly */
+  top: 100%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: left;
+  font-family: cursive;
+  
+  /* Add a text shadow or a dark background so text is readable over any image */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .image-container {
+    grid-template-columns: 1fr; /* Stack images vertically on smaller screens */
+    gap: 20px; /* Add some spacing between images */
+  }
+
+  .overlay {
+    font-size: 16px;
+    top: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .hero img {
+    width: 100%;
+    height: auto;
+  }
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        font-size: small;
+
+    }
+
+}
