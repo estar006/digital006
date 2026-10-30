@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cafe'</title>
+
+
+
+<link rel="stylesheet" href="style.css">
+  
+
+</head>
+<body>
+
+
+  <!-- Header -->
+  <header>
+<div class="logo">Swiss' Cafe<br>
+Good coffee, Good mood
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#aboutus">About</a></li>
+    <li><a href="#menu">menu</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#contact">Contact</a></li>
+
+  <button id="order-button">Order Now</button>
+  </ul>
+</nav>
+</header>
+  
+<section class="hero">
+  <img src="images/cafe.png">
+  <div class="overlay"><i>Hello!</i><br> Good Coffee<br>
+    enjoy<br> our cozy <br>ambiance.
+  </div>
+</section>
+
+<section id="gallery" class="gallery">
+
+  <p class="visit-text"><strong>Why Choose Us?</strong><br>
+  We are passionate about coffee and dedicated to providing the best experience for our customers.</p>
+<div class="image-container">
+  <div class="image-wrapper">
+    <img src="images/image coffee.jpg">
+    <div class="desc">Delicious coffee</div>
+  </div>
+
+  <div class="image-wrapper">
+    <img src="images/image pastry.jpg">
+    <div class="desc">Tasty pastries</div>
+  </div>
+
+  <div class="image-wrapper">
+    <img src="images/cafe image.jpg">
+    <div class="desc">Cozy cafe ambiance</div>
+  </div>
+</div>
+
+</section>
+
+  <section>
+    <h2>Our menu highlights</h2>
+    <ul>
+      
+      <div class="menu-item">
+        <li>
+          <a href="order.html?item=espresso">
+            <img class="image" src="images/expresso.jpg" width="200px" height="150px">
+            <div class="desc">Espresso -$3.00</div>
+          </a>
+        </li>
+      </div>
+
+    <div class="menu-item">
+        <li>
+    <a href="order.html?item=cappuccino">
+<img class="image" src="images/cappu.jpg" width="200px" height="150px">
+<div class="desc">Cappuccino -$4.00</div>
+</a>
+</li>
+  </div>
+
+      <div class="menu-item">
+      <li>
+    <a href="order.html?item=apple">
+      <img class="image" src="images/applee.jpg" width="200px" height="150px">
+      <div class="desc">Apple Strudel - $3.50</div>
+    </a>
+  </li>
+  
+      </div>
+
+    </ul>
+    <button id="view-button">VIEW FULL MENU
+      <img class="menu-icon" src="images/menuicon.png">
+    </button>
+  </section>
+  
+<section id="visit-us">
+  <div class="float">
+  <div class="info">
+  
+  <p class="visit-text">
+    <strong>Visit Us Today</strong><br>
+  Experience the best coffee in town at Swiss Cafe.
+   We look forward to serving you!<br>
+   <button id="location-button"> Find our location</button>
+
+    <div id="status-message"></div>
+  
+   </p>
+</div>
+   <img class="cafe-image" src="images/cafe image.jpg" alt="Cafe Image">
+  <img class="cafe-image" src="images/cafe image.jpg" alt="Cafe Image">
+  <img class="cafe-image" src="images/cafe image.jpg" alt="Cafe Image">
+  
+  </p>
+</div>
+</section>
+<footer>
+  <div class="footer-container">
+    <div class="footer-column footer-brand">
+      <h3>stay in the loop</h3>
+      <h3>Subscribe to Our Newsletter</h3>
+</div>
+      <div class="form">
+      <form class="subscribe-form">
+        <input class="email-input" type="email" placeholder="Enter your email">
+        <button class="submit" type="submit">Subscribe</button>
+      </form>
+      </div>
+    
+ 
+    </div>
+
+    <div class="social">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+      </div>
+
+    </div>
+
+  </div>  
+</div>
+<p class="footer-text">© 2023 Swiss Cafe. All rights reserved.</p>
+</footer>
+
+
+
+
+  <script>
+    // 1. Find the button on your webpage using its ID
+const menuButton = document.getElementById("view-button");
+
+// 2. Tell the button to wait for a click, then run the code inside the function
+menuButton.addEventListener("click", function() {
+    // 3. Change the page URL to your menu file
+    window.location.href = "menu.html"; 
+});
+
+
+
+        const locationButton  = document.getElementById("location-button");
+
+        locationButton.addEventListener("click", function() {
+            window.location.href = "location.html"; 
+        });
+const orderbutton = document.getElementById("order-button");
+orderButton.addEventListener('click',function(){
+  window.location.href = "order.html";
+})
+  </script>
+
+
+
+
+</body>
+
+</html>
