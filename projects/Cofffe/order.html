@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Coffee</title>
+    
+
+
+<style>
+     body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: #6f6f6f;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+    button {
+        background-color: brown;
+        padding: 10px;
+    }
+    button:hover {
+
+            background-color: darkred;
+    }
+</style>
+
+
+
+
+    <title>Order Coffee</title>
+    </head>
+
+    <h2 id="coffeeName"></h2>
+    <img id="coffeeImage" width="200">
+    <p id="coffeePrice"></p>
+
+   
+
+    <h2 id="teaName"></h2>
+    <img id="teaImage" width="200">
+    <p id="teaPrice"></p>
+
+
+<h2 id="pastriesName"></h2>
+    <img id="pastriesImage" width="200">
+    <p id="pastriesPrice"></p>
+
+
+
+
+    <br>
+    <input type="text" placeholder="Your Name"><br><br>
+    <input type="text" placeholder="Phone Number"><br><br>
+    <button>Place Order</button>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const item = params.get("item");
+
+        const coffeeData = {
+            latte: { price: "$4.50", image: "images/latte.jpg" },
+            cappuccino: { price: "$4.00", image: "images/cappu.jpg" },
+            espresso: { price: "$3.00", image: "images/expresso.jpg" },
+            mocha: { price: "$4.75", image: "images/mocha.jpg" },
+            americano: { price: "$3.50", image: "images/americano.jpg" }
+        };
+
+const teaData = {
+            herbal: { price: "$2.50", image: "images/herball.jpg" },
+            green: { price: "$2.75", image: "images/green.jpg" },
+            black: { price: "$2.25", image: "images/blackk.jpg" },
+            chai: { price: "$3.00", image: "images/chai.jpg" },
+            oolong: { price: "$2.80", image: "images/oolong.jpg" }
+        };
+
+const pastriesData = {
+            croissant: { price: "$2.50", image: "images/croiss.jpg" },
+            chocolate: { price: "$2.75", image: "images/chocolate.jpg" },
+            apple: { price: "$2.25", image: "images/applee.jpg" },
+            cheese: { price: "$3.00", image: "images/cheese.jpg" },
+            almond: { price: "$2.80", image: "images/almond.jpg" }
+        };
+
+
+
+        if (coffeeData[item]) {
+            document.getElementById("coffeeName").innerText = item.charAt(0).toUpperCase() + item.slice(1);
+            document.getElementById("coffeeImage").src = coffeeData[item].image;
+            document.getElementById("coffeePrice").innerText = coffeeData[item].price;
+
+        }
+
+if (teaData[item]) {
+            document.getElementById("teaName").innerText = item.charAt(0).toUpperCase() + item.slice(1);
+            document.getElementById("teaImage").src = teaData[item].image;
+            document.getElementById("teaPrice").innerText = teaData[item].price;
+        }
+
+if (pastriesData[item]) {
+            document.getElementById("pastriesName").innerText = item.charAt(0).toUpperCase() + item.slice(1);
+            document.getElementById("pastriesImage").src = pastriesData[item].image;
+            document.getElementById("pastriesPrice").innerText = pastriesData[item].price;
+        }
+
+
+
+
+        document.getElementById("placeOrder").addEventListener("click", function() {
+            const name = document.querySelector('input[placeholder="Your Name"]').value;
+            const phone = document.querySelector('input[placeholder="Phone Number"]').value;
+            const payment = document.querySelector('input[name="payment"]:checked').value;
+
+            if(!name || !phone){
+                alert("Please enter your name and phone number.");
+                return;
+            }
+
+            
+            document.getElementById("orderMessage").innerText =
+                `Thank you ${name}! You ordered ${item.charAt(0).toUpperCase() + item.slice(1)}. 
+            
+            
+            
+                 Price: ${coffeeData[item].price}. Payment Method: ${payment}.`;
+
+
+
+
+        });
+
+
+
+document.getElementById()
+    </script>
+
+</body>
+
+    </script>
+    
+</body>
+
+</html>
